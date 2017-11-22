@@ -27,3 +27,17 @@ $ curl https://raw.githubusercontent.com/wixb50/drm/master/registry.py -s -o /us
 $ drm --help
 ```
 详细见 [说明文档](https://github.com/wixb50/drm).
+
+**youtube-dl**
+
+安装
+```
+$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+$ sudo chmod a+rx /usr/local/bin/youtube-dl
+```
+
+使用
+```
+$ youtube-dl --help
+```
+详细见 [说明文档](https://github.com/rg3/youtube-dl).
