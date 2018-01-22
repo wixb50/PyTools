@@ -6,7 +6,7 @@ Python 工具(脚本)集合.
 安装
 ```
 $ py_ver=`python -V 2>&1 | awk '{print $2}' | cut -d '.' -f1`
-$ curl https://raw.githubusercontent.com/wixb50/DevOpsTools/PyTools/master/SimpleHTTPServerWithUpload/SimpleHTTPServerWithUpload_${py_ver}.py -s -o SimpleHTTPServerWithUpload.py
+$ curl https://raw.githubusercontent.com/wixb50/DevOpsTools/master/PyTools/SimpleHTTPServerWithUpload/SimpleHTTPServerWithUpload_${py_ver}.py -s -o SimpleHTTPServerWithUpload.py
 ```
 
 使用

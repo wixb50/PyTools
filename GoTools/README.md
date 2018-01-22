@@ -7,7 +7,7 @@ Simple command-line snippet manager, written in Go.
 
 安装
 ```
-$ go get github.com/wixb50/pet
+$ curl -L https://github.com/wixb50/pet/releases/download/v1.0.0/pet-linux-amd64.tar.gz -o pet-linux-amd64.tar.gz
 ```
 
 使用
@@ -47,3 +47,20 @@ $ sudo chmod +x /usr/local/bin/brook
 $ brook --help
 ```
 详细见 [说明文档](https://github.com/txthinking/brook).
+
+**gorelease.sh**
+
+A helper script for releasing golang project.
+
+安装
+```
+$ sudo curl -L https://raw.githubusercontent.com/wixb50/DevOpsTools/master/GoTools/gorelease/gorelease.sh -o /usr/local/bin/gorelease.sh
+$ sudo chmod +x /usr/local/bin/gorelease.sh
+```
+
+使用
+```
+# 进入golang项目目录，执行
+$ gorelease.sh [name] # name选填
+```
+打包文件存放在out目录下.
