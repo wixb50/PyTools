@@ -64,3 +64,36 @@ $ sudo chmod +x /usr/local/bin/gorelease.sh
 $ gorelease.sh [name] # name选填
 ```
 打包文件存放在out目录下.
+
+**dcmp**
+
+基于etcd的配置管理系统 (etcd v2).
+
+安装
+```
+$ curl -L https://github.com/wixb50/DevOpsTools/releases/download/dcmp/dcmp-linux-amd64.tar.gz -o dcmp-linux-amd64.tar.gz
+```
+
+配置
+```
+# 新建配置文件config/config.yml内容为
+
+listen: "0.0.0.0:8000"  # 监听的IP，端口
+
+base_path: "/config"    #etcd读取的根目录
+
+endpoints:              # etcd 接入地址
+   - "http://127.0.0.1:2379"
+
+# etcd ssl 配置
+#
+# ca_file: "/path/to/ca.crt"
+# cert_file: "/path/to/client.crt"
+# key_file: "/path/to/client.key"
+```
+
+使用
+```
+$ dcmp
+```
+详细见 [说明文档](https://github.com/silenceper/dcmp).
