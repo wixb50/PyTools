@@ -97,3 +97,19 @@ endpoints:              # etcd 接入地址
 $ dcmp
 ```
 详细见 [说明文档](https://github.com/silenceper/dcmp).
+
+**autossh**
+
+go写的一个ssh远程客户端,可一键登录远程服务器
+
+安装
+```
+$ curl -L https://github.com/islenbo/autossh/releases/download/v0.2/autossh-linux-amd64_v0.2.zip -o autossh-linux-amd64.zip
+$ unzip autossh-linux-amd64.zip # 进入文件夹编辑servers.json
+```
+
+使用
+```
+$ ./autossh
+```
+详细见 [说明文档](https://github.com/wixb50/autossh).

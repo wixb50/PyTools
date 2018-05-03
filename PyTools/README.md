@@ -41,3 +41,18 @@ $ sudo chmod a+rx /usr/local/bin/youtube-dl
 $ youtube-dl --help
 ```
 详细见 [说明文档](https://github.com/rg3/youtube-dl).
+
+**pyflakes**
+
+Python的语法检查工具.
+
+安装
+```
+$ pip install pyflakes
+```
+
+使用
+```
+$ pyflakes 文件|文件夹
+```
+详细见 [说明文档](https://pypi.org/project/pyflakes/).
