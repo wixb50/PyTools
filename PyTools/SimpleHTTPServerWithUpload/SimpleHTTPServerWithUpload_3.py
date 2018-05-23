@@ -15,6 +15,7 @@ __author__ = "bones7456"
 __home_page__ = "http://li2z.cn/"
  
 import os
+import sys
 import posixpath
 import http.server
 import urllib.request, urllib.parse, urllib.error
@@ -289,7 +290,12 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
  
 def test(HandlerClass = SimpleHTTPRequestHandler,
          ServerClass = http.server.HTTPServer):
-    http.server.test(HandlerClass, ServerClass)
+    if sys.argv[1:]:
+        port = int(sys.argv[1])
+    else:
+        port = 8000
+
+    http.server.test(HandlerClass, ServerClass, port=port)
  
 if __name__ == '__main__':
     test()
