@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-cn" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-cn" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>GoTools &mdash; DevOpsTools 0.0.1 文档</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="PyTools" href="../PyTools/README.html" />
+    <link rel="prev" title="DevOpsTools" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> DevOpsTools
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GoTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pet">pet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ctop">ctop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#brook">brook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gorelease-sh">gorelease.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dcmp">dcmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#autossh">autossh</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PyTools/README.html">PyTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#simplehttpserverwithupload">SimpleHTTPServerWithUpload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#docker-registry-management">Docker Registry Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#youtube-dl">youtube-dl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#pyflakes">pyflakes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">DevOpsTools</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>GoTools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/GoTools/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gotools">
+<h1>GoTools<a class="headerlink" href="#gotools" title="永久链接至标题">¶</a></h1>
+<p>Golang 工具集合.</p>
+<div class="section" id="pet">
+<h2>pet<a class="headerlink" href="#pet" title="永久链接至标题">¶</a></h2>
+<p>Simple command-line snippet manager, written in Go.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/pet/releases/download/v1.0.0/pet-linux-amd64.tar.gz -o pet-linux-amd64.tar.gz
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pet --help
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/wixb50/pet">说明文档</a>.</p>
+</div>
+<div class="section" id="ctop">
+<h2>ctop<a class="headerlink" href="#ctop" title="永久链接至标题">¶</a></h2>
+<p>Top-like interface for container metrics.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -o /usr/local/bin/ctop
+$ sudo chmod +x /usr/local/bin/ctop
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ctop
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/bcicen/ctop">说明文档</a>.</p>
+</div>
+<div class="section" id="brook">
+<h2>brook<a class="headerlink" href="#brook" title="永久链接至标题">¶</a></h2>
+<p>Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy software.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/txthinking/brook/releases/download/v20171113/brook -o /usr/local/bin/brook
+$ sudo chmod +x /usr/local/bin/brook
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ brook --help
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/txthinking/brook">说明文档</a>.</p>
+</div>
+<div class="section" id="gorelease-sh">
+<h2>gorelease.sh<a class="headerlink" href="#gorelease-sh" title="永久链接至标题">¶</a></h2>
+<p>A helper script for releasing golang project.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://raw.githubusercontent.com/wixb50/DevOpsTools/master/GoTools/gorelease/gorelease.sh -o /usr/local/bin/gorelease.sh
+$ sudo chmod +x /usr/local/bin/gorelease.sh
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># 进入golang项目目录，执行
+$ gorelease.sh [name] # name选填
+</pre></div>
+</div>
+<p>打包文件存放在out目录下.</p>
+</div>
+<div class="section" id="dcmp">
+<h2>dcmp<a class="headerlink" href="#dcmp" title="永久链接至标题">¶</a></h2>
+<p>基于etcd的配置管理系统 (etcd v2).</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/DevOpsTools/releases/download/dcmp/dcmp-linux-amd64.tar.gz -o dcmp-linux-amd64.tar.gz
+</pre></div>
+</div>
+<p>配置</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 新建配置文件config/config.yml内容为</span>
+
+<span class="n">listen</span><span class="p">:</span> <span class="s2">&quot;0.0.0.0:8000&quot;</span>  <span class="c1"># 监听的IP，端口</span>
+
+<span class="n">base_path</span><span class="p">:</span> <span class="s2">&quot;/config&quot;</span>    <span class="c1">#etcd读取的根目录</span>
+
+<span class="n">endpoints</span><span class="p">:</span>              <span class="c1"># etcd 接入地址</span>
+   <span class="o">-</span> <span class="s2">&quot;http://127.0.0.1:2379&quot;</span>
+
+<span class="c1"># etcd ssl 配置</span>
+<span class="c1">#</span>
+<span class="c1"># ca_file: &quot;/path/to/ca.crt&quot;</span>
+<span class="c1"># cert_file: &quot;/path/to/client.crt&quot;</span>
+<span class="c1"># key_file: &quot;/path/to/client.key&quot;</span>
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ dcmp
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/silenceper/dcmp">说明文档</a>.</p>
+</div>
+<div class="section" id="autossh">
+<h2>autossh<a class="headerlink" href="#autossh" title="永久链接至标题">¶</a></h2>
+<p>go写的一个ssh远程客户端,可一键登录远程服务器</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/islenbo/autossh/releases/download/v0.2/autossh-linux-amd64_v0.2.zip -o autossh-linux-amd64.zip
+$ unzip autossh-linux-amd64.zip # 进入文件夹编辑servers.json
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./autossh
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/wixb50/autossh">说明文档</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../PyTools/README.html" class="btn btn-neutral float-right" title="PyTools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="DevOpsTools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, wixb50.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh_cn',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

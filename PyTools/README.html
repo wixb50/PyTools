@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-cn" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-cn" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PyTools &mdash; DevOpsTools 0.0.1 文档</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="GoTools" href="../GoTools/README.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> DevOpsTools
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../GoTools/README.html">GoTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#pet">pet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#ctop">ctop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#brook">brook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#gorelease-sh">gorelease.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#dcmp">dcmp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#autossh">autossh</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PyTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simplehttpserverwithupload">SimpleHTTPServerWithUpload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docker-registry-management">Docker Registry Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#youtube-dl">youtube-dl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pyflakes">pyflakes</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">DevOpsTools</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>PyTools</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/PyTools/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pytools">
+<h1>PyTools<a class="headerlink" href="#pytools" title="永久链接至标题">¶</a></h1>
+<p>Python 工具(脚本)集合.</p>
+<div class="section" id="simplehttpserverwithupload">
+<h2>SimpleHTTPServerWithUpload<a class="headerlink" href="#simplehttpserverwithupload" title="永久链接至标题">¶</a></h2>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ py_ver=`python -V 2&gt;&amp;1 | awk &#39;{print $2}&#39; | cut -d &#39;.&#39; -f1`
+$ curl https://raw.githubusercontent.com/wixb50/DevOpsTools/master/PyTools/SimpleHTTPServerWithUpload/SimpleHTTPServerWithUpload_${py_ver}.py -s -o SimpleHTTPServerWithUpload.py
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ python SimpleHTTPServerWithUpload.py
+</pre></div>
+</div>
+</div>
+<div class="section" id="docker-registry-management">
+<h2>Docker Registry Management<a class="headerlink" href="#docker-registry-management" title="永久链接至标题">¶</a></h2>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo -i
+$ curl https://raw.githubusercontent.com/wixb50/drm/master/registry.py -s -o /usr/local/bin/drm &amp;&amp; chmod 755 /usr/local/bin/drm
+</pre></div>
+</div>
+<p>使用:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ drm --help
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/wixb50/drm">说明文档</a>.</p>
+</div>
+<div class="section" id="youtube-dl">
+<h2>youtube-dl<a class="headerlink" href="#youtube-dl" title="永久链接至标题">¶</a></h2>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+$ sudo chmod a+rx /usr/local/bin/youtube-dl
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ youtube-dl --help
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/rg3/youtube-dl">说明文档</a>.</p>
+</div>
+<div class="section" id="pyflakes">
+<h2>pyflakes<a class="headerlink" href="#pyflakes" title="永久链接至标题">¶</a></h2>
+<p>Python的语法检查工具.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pyflakes
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pyflakes 文件|文件夹
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://pypi.org/project/pyflakes/">说明文档</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../GoTools/README.html" class="btn btn-neutral" title="GoTools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, wixb50.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'zh_cn',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
