@@ -59,6 +59,10 @@
           
             
             
+              <div class="version">
+                latest
+              </div>
+            
           
 
           
@@ -95,6 +99,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#docker-registry-management">Docker Registry Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#youtube-dl">youtube-dl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pyflakes">pyflakes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ghp-import">ghp-import</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#honcho">honcho</a></li>
 </ul>
 </li>
 </ul>
@@ -148,7 +154,9 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/PyTools/README.rst.txt" rel="nofollow"> View page source</a>
+            
+              <a href="https://github.com/wixb50/DevOpsTools/blob/HEAD/PyTools/README.rst" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
@@ -214,6 +222,36 @@ $ sudo chmod a+rx /usr/local/bin/youtube-dl
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://pypi.org/project/pyflakes/">说明文档</a>.</p>
+</div>
+<div class="section" id="ghp-import">
+<h2>ghp-import<a class="headerlink" href="#ghp-import" title="永久链接至标题">¶</a></h2>
+<p>快速将本地静态文件夹提交到github pages工具.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install ghp-import
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ ghp-import output
+$ git push origin gh-pages
+# 或者
+$ ghp-import -p -m &quot;Update github pages&quot; output
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/davisp/ghp-import">说明文档</a>.</p>
+</div>
+<div class="section" id="honcho">
+<h2>honcho<a class="headerlink" href="#honcho" title="永久链接至标题">¶</a></h2>
+<p>python实现的Foreman，进程服务管理工具.</p>
+<p>安装</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install honcho
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ honcho start # 启动Procfile的所有服务
+$ honcho export # 支持将命令导出为其他服务格式runit、supervisord、systemd、upstart
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/nickstenning/honcho">说明文档</a>.</p>
 </div>
 </div>
 
