@@ -63,3 +63,39 @@ Python的语法检查工具.
     $ pyflakes 文件|文件夹
 
 详细见 `说明文档 <https://pypi.org/project/pyflakes/>`__.
+
+ghp-import
+===========
+
+快速将本地静态文件夹提交到github pages工具.
+
+安装 ::
+
+    $ pip install ghp-import
+
+
+使用 ::
+
+    $ ghp-import output
+    $ git push origin gh-pages
+    # 或者
+    $ ghp-import -p -m "Update github pages" output
+
+详细见 `说明文档 <https://github.com/davisp/ghp-import>`__.
+
+honcho
+=======
+
+python实现的Foreman，进程服务管理工具.
+
+安装 ::
+
+    $ pip install honcho
+
+
+使用 ::
+
+    $ honcho start # 启动Procfile的所有服务
+    $ honcho export # 支持将命令导出为其他服务格式runit、supervisord、systemd、upstart
+
+详细见 `说明文档 <https://github.com/nickstenning/honcho>`__.

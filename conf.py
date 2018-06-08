@@ -24,7 +24,7 @@ copyright = u'2018, wixb50'
 author = u'wixb50'
 
 # The short X.Y version
-version = u''
+version = u'latest'
 # The full version, including alpha/beta/rc tags
 release = u'0.0.1'
 
@@ -76,6 +76,14 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+html_context = {
+    "display_github": True,
+    "github_host": "github.com",
+    "github_user": "wixb50",
+    "github_repo": 'DevOpsTools',
+    "github_version": "HEAD/",
+}
 
 html_favicon = 'favicon.ico'
 
