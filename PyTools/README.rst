@@ -99,3 +99,19 @@ python实现的Foreman，进程服务管理工具.
     $ honcho export # 支持将命令导出为其他服务格式runit、supervisord、systemd、upstart
 
 详细见 `说明文档 <https://github.com/nickstenning/honcho>`__.
+
+mtools
+=======
+
+mongodb日志分析，可视化工具.
+
+安装 ::
+
+    $ pip install mtools
+
+
+使用 ::
+
+    $ mlogvis logfile # 分析日志可视化为html文件输出
+
+详细见 `说明文档 <https://github.com/rueckstiess/mtools>`__.

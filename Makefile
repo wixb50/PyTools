@@ -19,6 +19,6 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-# 定制增加的命令
+# 定制增加的命令提交到ghp,先运行make html生成
 github-pages:
 	ghp-import -p -m "Update github pages" $(BUILDDIR)/html
