@@ -26,11 +26,11 @@
 
   
 
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="JavaTools" href="../JavaTools/README.html" />
     <link rel="prev" title="GoTools" href="../GoTools/README.html" /> 
 
   
@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#gorelease-sh">gorelease.sh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#dcmp">dcmp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#autossh">autossh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../GoTools/README.html#dive">dive</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">PyTools</a><ul>
@@ -101,6 +102,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#pyflakes">pyflakes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ghp-import">ghp-import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#honcho">honcho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mtools">mtools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaTools/README.html">JavaTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../JavaTools/README.html#draw-io">draw.io</a></li>
 </ul>
 </li>
 </ul>
@@ -175,24 +181,24 @@
 <div class="section" id="simplehttpserverwithupload">
 <h2>SimpleHTTPServerWithUpload<a class="headerlink" href="#simplehttpserverwithupload" title="永久链接至标题">¶</a></h2>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ py_ver=`python -V 2&gt;&amp;1 | awk &#39;{print $2}&#39; | cut -d &#39;.&#39; -f1`
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py_ver=`python -V 2&gt;&amp;1 | awk &#39;{print $2}&#39; | cut -d &#39;.&#39; -f1`
 $ curl https://raw.githubusercontent.com/wixb50/DevOpsTools/master/PyTools/SimpleHTTPServerWithUpload/SimpleHTTPServerWithUpload_${py_ver}.py -s -o SimpleHTTPServerWithUpload.py
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ python SimpleHTTPServerWithUpload.py
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python SimpleHTTPServerWithUpload.py
 </pre></div>
 </div>
 </div>
 <div class="section" id="docker-registry-management">
 <h2>Docker Registry Management<a class="headerlink" href="#docker-registry-management" title="永久链接至标题">¶</a></h2>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo -i
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo -i
 $ curl https://raw.githubusercontent.com/wixb50/drm/master/registry.py -s -o /usr/local/bin/drm &amp;&amp; chmod 755 /usr/local/bin/drm
 </pre></div>
 </div>
 <p>使用:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ drm --help
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ drm --help
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/wixb50/drm">说明文档</a>.</p>
@@ -200,12 +206,12 @@ $ curl https://raw.githubusercontent.com/wixb50/drm/master/registry.py -s -o /us
 <div class="section" id="youtube-dl">
 <h2>youtube-dl<a class="headerlink" href="#youtube-dl" title="永久链接至标题">¶</a></h2>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 $ sudo chmod a+rx /usr/local/bin/youtube-dl
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ youtube-dl --help
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ youtube-dl --help
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/rg3/youtube-dl">说明文档</a>.</p>
@@ -214,11 +220,11 @@ $ sudo chmod a+rx /usr/local/bin/youtube-dl
 <h2>pyflakes<a class="headerlink" href="#pyflakes" title="永久链接至标题">¶</a></h2>
 <p>Python的语法检查工具.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pyflakes
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install pyflakes
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pyflakes 文件|文件夹
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pyflakes 文件|文件夹
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://pypi.org/project/pyflakes/">说明文档</a>.</p>
@@ -227,11 +233,11 @@ $ sudo chmod a+rx /usr/local/bin/youtube-dl
 <h2>ghp-import<a class="headerlink" href="#ghp-import" title="永久链接至标题">¶</a></h2>
 <p>快速将本地静态文件夹提交到github pages工具.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install ghp-import
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install ghp-import
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ ghp-import output
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ghp-import output
 $ git push origin gh-pages
 # 或者
 $ ghp-import -p -m &quot;Update github pages&quot; output
@@ -243,15 +249,28 @@ $ ghp-import -p -m &quot;Update github pages&quot; output
 <h2>honcho<a class="headerlink" href="#honcho" title="永久链接至标题">¶</a></h2>
 <p>python实现的Foreman，进程服务管理工具.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install honcho
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install honcho
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ honcho start # 启动Procfile的所有服务
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ honcho start # 启动Procfile的所有服务
 $ honcho export # 支持将命令导出为其他服务格式runit、supervisord、systemd、upstart
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/nickstenning/honcho">说明文档</a>.</p>
+</div>
+<div class="section" id="mtools">
+<h2>mtools<a class="headerlink" href="#mtools" title="永久链接至标题">¶</a></h2>
+<p>mongodb日志分析，可视化工具.</p>
+<p>安装</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install mtools
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mlogvis logfile # 分析日志可视化为html文件输出
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/rueckstiess/mtools">说明文档</a>.</p>
 </div>
 </div>
 
@@ -263,6 +282,8 @@ $ honcho export # 支持将命令导出为其他服务格式runit、supervisord�
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../JavaTools/README.html" class="btn btn-neutral float-right" title="JavaTools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
       
         <a href="../GoTools/README.html" class="btn btn-neutral" title="GoTools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
@@ -273,7 +294,7 @@ $ honcho export # 支持将命令导出为其他服务格式runit、supervisord�
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, wixb50.
+        &copy; Copyright 2018, wixb50
 
     </p>
   </div>
@@ -292,27 +313,18 @@ $ honcho export # 支持将命令导出为其他服务格式runit、supervisord�
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'0.0.1',
-            LANGUAGE:'zh_cn',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {

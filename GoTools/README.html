@@ -26,8 +26,7 @@
 
   
 
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -93,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#gorelease-sh">gorelease.sh</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dcmp">dcmp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#autossh">autossh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dive">dive</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../PyTools/README.html">PyTools</a><ul>
@@ -102,6 +102,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#pyflakes">pyflakes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#ghp-import">ghp-import</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#honcho">honcho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PyTools/README.html#mtools">mtools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../JavaTools/README.html">JavaTools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../JavaTools/README.html#draw-io">draw.io</a></li>
 </ul>
 </li>
 </ul>
@@ -177,11 +182,11 @@
 <h2>pet<a class="headerlink" href="#pet" title="永久链接至标题">¶</a></h2>
 <p>Simple command-line snippet manager, written in Go.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/pet/releases/download/v1.0.0/pet-linux-amd64.tar.gz -o pet-linux-amd64.tar.gz
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/pet/releases/download/v1.0.0/pet-linux-amd64.tar.gz -o pet-linux-amd64.tar.gz
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ pet --help
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pet --help
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/wixb50/pet">说明文档</a>.</p>
@@ -190,12 +195,12 @@
 <h2>ctop<a class="headerlink" href="#ctop" title="永久链接至标题">¶</a></h2>
 <p>Top-like interface for container metrics.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -o /usr/local/bin/ctop
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/bcicen/ctop/releases/download/v0.6.1/ctop-0.6.1-linux-amd64 -o /usr/local/bin/ctop
 $ sudo chmod +x /usr/local/bin/ctop
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ ctop
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ctop
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/bcicen/ctop">说明文档</a>.</p>
@@ -204,12 +209,12 @@ $ sudo chmod +x /usr/local/bin/ctop
 <h2>brook<a class="headerlink" href="#brook" title="永久链接至标题">¶</a></h2>
 <p>Brook is a cross-platform(Linux/MacOS/Windows/Android/iOS) proxy software.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/txthinking/brook/releases/download/v20171113/brook -o /usr/local/bin/brook
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo curl -L https://github.com/txthinking/brook/releases/download/v20171113/brook -o /usr/local/bin/brook
 $ sudo chmod +x /usr/local/bin/brook
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ brook --help
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brook --help
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/txthinking/brook">说明文档</a>.</p>
@@ -218,12 +223,12 @@ $ sudo chmod +x /usr/local/bin/brook
 <h2>gorelease.sh<a class="headerlink" href="#gorelease-sh" title="永久链接至标题">¶</a></h2>
 <p>A helper script for releasing golang project.</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ sudo curl -L https://raw.githubusercontent.com/wixb50/DevOpsTools/master/GoTools/gorelease/gorelease.sh -o /usr/local/bin/gorelease.sh
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo curl -L https://raw.githubusercontent.com/wixb50/DevOpsTools/master/GoTools/gorelease/gorelease.sh -o /usr/local/bin/gorelease.sh
 $ sudo chmod +x /usr/local/bin/gorelease.sh
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span># 进入golang项目目录，执行
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 进入golang项目目录，执行
 $ gorelease.sh [name] # name选填
 </pre></div>
 </div>
@@ -233,11 +238,11 @@ $ gorelease.sh [name] # name选填
 <h2>dcmp<a class="headerlink" href="#dcmp" title="永久链接至标题">¶</a></h2>
 <p>基于etcd的配置管理系统 (etcd v2).</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/DevOpsTools/releases/download/dcmp/dcmp-linux-amd64.tar.gz -o dcmp-linux-amd64.tar.gz
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wixb50/DevOpsTools/releases/download/dcmp/dcmp-linux-amd64.tar.gz -o dcmp-linux-amd64.tar.gz
 </pre></div>
 </div>
 <p>配置</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 新建配置文件config/config.yml内容为</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 新建配置文件config/config.yml内容为</span>
 
 <span class="n">listen</span><span class="p">:</span> <span class="s2">&quot;0.0.0.0:8000&quot;</span>  <span class="c1"># 监听的IP，端口</span>
 
@@ -254,7 +259,7 @@ $ gorelease.sh [name] # name选填
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ dcmp
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ dcmp
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/silenceper/dcmp">说明文档</a>.</p>
@@ -263,15 +268,29 @@ $ gorelease.sh [name] # name选填
 <h2>autossh<a class="headerlink" href="#autossh" title="永久链接至标题">¶</a></h2>
 <p>go写的一个ssh远程客户端,可一键登录远程服务器</p>
 <p>安装</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ curl -L https://github.com/islenbo/autossh/releases/download/v0.2/autossh-linux-amd64_v0.2.zip -o autossh-linux-amd64.zip
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -L https://github.com/islenbo/autossh/releases/download/v0.2/autossh-linux-amd64_v0.2.zip -o autossh-linux-amd64.zip
 $ unzip autossh-linux-amd64.zip # 进入文件夹编辑servers.json
 </pre></div>
 </div>
 <p>使用</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ ./autossh
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./autossh
 </pre></div>
 </div>
 <p>详细见 <a class="reference external" href="https://github.com/wixb50/autossh">说明文档</a>.</p>
+</div>
+<div class="section" id="dive">
+<h2>dive<a class="headerlink" href="#dive" title="永久链接至标题">¶</a></h2>
+<p>Docker镜像分析工具，寻找缩小镜像的方法</p>
+<p>安装</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ curl -L https://github.com/wagoodman/dive/releases/download/v0.6.0/dive_0.6.0_linux_amd64.deb -o dive_0.6.0_linux_amd64.deb
+$ sudo apt install ./dive_0.6.0_linux_amd64.deb # debian安装方法
+</pre></div>
+</div>
+<p>使用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ dive &lt;your-image-tag&gt;
+</pre></div>
+</div>
+<p>详细见 <a class="reference external" href="https://github.com/wagoodman/dive">说明文档</a>.</p>
 </div>
 </div>
 
@@ -295,7 +314,7 @@ $ unzip autossh-linux-amd64.zip # 进入文件夹编辑servers.json
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, wixb50.
+        &copy; Copyright 2018, wixb50
 
     </p>
   </div>
@@ -314,27 +333,18 @@ $ unzip autossh-linux-amd64.zip # 进入文件夹编辑servers.json
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'0.0.1',
-            LANGUAGE:'zh_cn',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {

@@ -123,3 +123,20 @@ go写的一个ssh远程客户端,可一键登录远程服务器
     $ ./autossh
 
 详细见 `说明文档 <https://github.com/wixb50/autossh>`__.
+
+dive
+=======
+
+Docker镜像分析工具，寻找缩小镜像的方法
+
+安装 ::
+
+    $ curl -L https://github.com/wagoodman/dive/releases/download/v0.6.0/dive_0.6.0_linux_amd64.deb -o dive_0.6.0_linux_amd64.deb
+    $ sudo apt install ./dive_0.6.0_linux_amd64.deb # debian安装方法
+
+
+使用 ::
+
+    $ dive <your-image-tag>
+
+详细见 `说明文档 <https://github.com/wagoodman/dive>`__.

@@ -5,3 +5,4 @@
 
    GoTools/README
    PyTools/README
+   JavaTools/README
